@@ -5,3 +5,6 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# 中文名副本，仅本地使用（index.html 是同一份内容）
+ChatGPT职业提示词-速查.html

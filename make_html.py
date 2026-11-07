@@ -385,6 +385,7 @@ render();
 """
 
 html = tpl.replace("__DATA__", json.dumps(payload, ensure_ascii=False, separators=(",", ":")))
-path = os.path.join(OUT, "ChatGPT职业提示词-速查.html")
-open(path, "w", encoding="utf-8").write(html)
-print("written:", path, round(len(html) / 1024), "KB")
+# index.html 供 GitHub Pages 使用；中文名副本方便本地双击打开（不入库）
+for name in ("index.html", "ChatGPT职业提示词-速查.html"):
+    open(os.path.join(OUT, name), "w", encoding="utf-8").write(html)
+print("written: index.html", round(len(html) / 1024), "KB")
