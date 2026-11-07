@@ -1,0 +1,7 @@
+# 抓取的原始 HTML 存档，28MB，不纳入版本库（运行 scrape.py 可重新生成）
+raw/
+
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
